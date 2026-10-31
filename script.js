@@ -1,25 +1,32 @@
 async function loadSite(){
-  const res=await fetch('content/site.json',{cache:'no-store'});
-  const s=await res.json();
-  const q=id=>document.getElementById(id);
-  q('heroHeading').textContent=s.hero_heading;
-  q('tagline').textContent=s.tagline;
-  q('heroText').textContent=s.hero_text;
-  q('phoneTop').textContent=s.phone_display; q('phoneTop').href='tel:'+s.phone_link;
-  q('emailTop').textContent=s.email; q('emailTop').href='mailto:'+s.email;
-  q('callBtn').href='tel:'+s.phone_link; q('textBtn').href='sms:'+s.phone_link;
-  q('serviceAreaMini').textContent=s.service_area;
-  q('director').textContent=s.director;
-  q('phoneContact').textContent=s.phone_display; q('phoneContact').href='tel:'+s.phone_link;
-  q('emailContact').textContent=s.email; q('emailContact').href='mailto:'+s.email;
-  q('serviceArea').textContent='Serving '+s.service_area;
-  q('footerTagline').textContent=s.tagline;
-  q('aboutTagline').textContent=s.tagline;
-  const sg=q('servicesGrid'); sg.innerHTML='';
-  s.services.forEach(x=>{const a=document.createElement('article');a.className='service-card';a.innerHTML=`<h3>${x.name}</h3><p>${x.description}</p>`;sg.appendChild(a)});
-  const mg=q('machineryGrid'); mg.innerHTML='';
-  s.machinery.forEach(x=>{const a=document.createElement('article');a.className='card';a.innerHTML=`<img src="${x.image}" alt="${x.name}"><div class="pad"><h3>${x.name}</h3><p>${x.description}</p></div>`;mg.appendChild(a)});
-  const pg=q('projectsGrid'); pg.innerHTML='';
-  s.projects.forEach(x=>{const a=document.createElement('article');a.className='card';a.innerHTML=`<img src="${x.image}" alt="${x.title}"><div class="pad"><h3>${x.title}</h3><p>${x.description}</p></div>`;pg.appendChild(a)});
+  const s = await (await fetch('/content/site.json',{cache:'no-store'})).json();
+  const $ = id => document.getElementById(id);
+
+  $('directorTop').textContent=s.director;
+  $('phoneTop').textContent='☎ '+s.phone; $('phoneTop').href='tel:'+s.phone_link;
+  $('emailTop').textContent='✉ '+s.email; $('emailTop').href='mailto:'+s.email;
+  $('heroHeading').innerHTML=s.hero_heading.replace('Machinery Hire','<span class="red">Machinery Hire</span>');
+  $('tagline').textContent=s.tagline;
+  $('heroText').textContent=s.hero_text;
+  $('heroImage').src=s.hero_image;
+  $('callBtn').href='tel:'+s.phone_link;
+  $('phoneBtn').textContent=s.phone;
+  $('textBtn').href='sms:'+s.phone_link;
+  $('serviceAreaTrust').textContent='Serving '+s.service_area;
+
+  const makeCard=(x,cls='')=>`<article class="card ${cls}"><img src="${x.image}" alt="${x.name}"><div class="card-body"><h3>${x.name}</h3><p>${x.description}</p></div></article>`;
+  $('servicesGrid').innerHTML=s.services.map(x=>makeCard(x)).join('');
+  $('machineryGrid').innerHTML=s.machinery.map(x=>makeCard(x,'machine')).join('');
+  $('projectsGrid').innerHTML=s.projects.map(x=>`<article class="project"><img src="${x.image}" alt="${x.title}"><div class="project-info"><b>${x.title}</b><span>${x.description}</span></div></article>`).join('');
+
+  $('addressHeading').textContent=s.address;
+  $('directionsBtn').href=s.directions_url;
+  $('mapLink').href=s.directions_url;
+  $('mapFrame').src='https://www.google.com/maps?q='+encodeURIComponent(s.address)+'&output=embed';
+
+  $('directorContact').textContent=s.director;
+  $('phoneContact').textContent='☎ '+s.phone; $('phoneContact').href='tel:'+s.phone_link;
+  $('emailContact').textContent='✉ '+s.email; $('emailContact').href='mailto:'+s.email;
+  $('addressContact').textContent='📍 '+s.address;
 }
 loadSite();

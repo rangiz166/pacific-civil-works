@@ -1,30 +1,35 @@
 {
   "business_name": "Pacific Civil Works",
+  "director": "Narendra Prasad",
+  "phone": "022 318 4466",
+  "phone_link": "+64223184466",
+  "email": "pacificautos8@gmail.com",
   "tagline": "Quality Work. Safe Practices. Strong Foundations.",
   "hero_heading": "Earthworks & Machinery Hire",
   "hero_text": "Providing reliable civil works and machinery hire across Waikato, Auckland, Tauranga and the wider North Island.",
-  "phone_display": "022 318 4466",
-  "phone_link": "+64223184466",
-  "email": "pacificautos8@gmail.com",
-  "director": "Narendra Prasad",
+  "hero_image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Construction%20site%20excavator%20and%20truck.jpg?width=1600",
   "service_area": "Waikato, Auckland, Tauranga and the wider North Island",
+  "address": "45 Duke Street, Frankton, Hamilton 3204",
+  "directions_url": "https://www.google.com/maps/dir/?api=1&destination=45+Duke+Street,+Frankton,+Hamilton+3204,+New+Zealand",
   "services": [
-    {"name":"Earthworks","description":"Site cuts, house pads, section clearing and general excavation."},
-    {"name":"Drainage","description":"Stormwater, wastewater and drainage excavation solutions."},
-    {"name":"Retaining Walls","description":"Site preparation for timber, concrete and block retaining walls."},
-    {"name":"Roading","description":"Driveways, access roads and roading preparation."},
-    {"name":"Site Preparation","description":"Site clearing, levelling and preparation for all types of builds."}
+    {"name":"Earthworks","description":"Site cuts, house pads, section clearing and general excavation.","image":"https://commons.wikimedia.org/wiki/Special:Redirect/file/Road%20construction%20and%20repairing.jpg?width=900"},
+    {"name":"Drainage","description":"Stormwater, wastewater and drainage solutions.","image":"https://commons.wikimedia.org/wiki/Special:Redirect/file/Construction%20of%20Drainage%20system.jpg?width=900"},
+    {"name":"Retaining Walls","description":"Timber, concrete and block retaining wall preparation.","image":"https://commons.wikimedia.org/wiki/Special:Redirect/file/Foundation%20and%20retaining%20wall.jpg?width=900"},
+    {"name":"Roading","description":"Driveways, access roads and roading preparation.","image":"https://commons.wikimedia.org/wiki/Special:Redirect/file/Road%20Construction%20image.jpg?width=900"},
+    {"name":"Site Preparation","description":"Site clearing, levelling and preparation for all types of builds.","image":"https://commons.wikimedia.org/wiki/Special:Redirect/file/Construction%20site%20at%20foundation%20level.jpg?width=900"}
   ],
   "machinery": [
-    {"name":"Hyundai 8 Tonne Digger","description":"Versatile excavator for earthworks, trenching and site preparation.","image":"assets/digger.svg"},
-    {"name":"2 to 4 Tonne Rollers","description":"Reliable compaction for driveways, roading and site preparation.","image":"assets/roller.svg"},
-    {"name":"Bobcat with Attachments","description":"Sweeper, 3-in-1 bucket and 24-inch miller head.","image":"assets/bobcat.svg"},
-    {"name":"8x4 & 6x4 Trucks","description":"Tipper trucks and transport support for civil and earthmoving work.","image":"assets/truck.svg"}
+    {"name":"8½ Tonne Diggers","description":"Hyundai 8-tonne class excavators for all types of civil works.","image":"https://commons.wikimedia.org/wiki/Special:Redirect/file/8938West%20Dirita,%20San%20Antonio,%20Zambales%2049.jpg?width=900"},
+    {"name":"2 to 4 Tonne Rollers","description":"Smooth, reliable compaction for driveways and roading.","image":"https://commons.wikimedia.org/wiki/Special:Redirect/file/Road%20Roller%20in%20wait.jpg?width=900"},
+    {"name":"Bobcat with Attachments","description":"Sweeper, 3 in 1 bucket and 24-inch miller head.","image":"https://commons.wikimedia.org/wiki/Special:Redirect/file/Bobcat%20skidsteer.jpg?width=900"},
+    {"name":"8x4 & 6x4 Trucks","description":"Reliable tipper trucks for cartage and material transport.","image":"https://commons.wikimedia.org/wiki/Special:Redirect/file/Kipper%20im%20Einsatz.jpg?width=900"}
   ],
   "projects": [
-    {"title":"Earthworks","description":"Site preparation and excavation.","image":"assets/digger.svg"},
-    {"title":"Retaining","description":"Retaining wall preparation.","image":"assets/truck.svg"},
-    {"title":"Roading","description":"Driveway and access road preparation.","image":"assets/roller.svg"},
-    {"title":"Drainage","description":"Drainage and trenching work.","image":"assets/bobcat.svg"}
-  ]
+    {"title":"Drainage Trenching","description":"Drainage and trenching work.","image":"https://commons.wikimedia.org/wiki/Special:Redirect/file/Trench%20for%20drainage%20infrastructure.jpg?width=900"},
+    {"title":"Access & Gravel Works","description":"Gravel road and access preparation.","image":"https://commons.wikimedia.org/wiki/Special:Redirect/file/A%20gravel%20road.jpg?width=900"},
+    {"title":"Foundation Preparation","description":"Residential foundation and site works.","image":"https://commons.wikimedia.org/wiki/Special:Redirect/file/Foundation%20(engineering).jpg?width=900"},
+    {"title":"Road Construction","description":"Road and driveway preparation.","image":"https://commons.wikimedia.org/wiki/Special:Redirect/file/Construction%20of%20Roads.jpg?width=900"},
+    {"title":"Machine Transport","description":"Excavator and machinery transport.","image":"https://commons.wikimedia.org/wiki/Special:Redirect/file/Excavator%20On%20A%20Truck%20Bed.jpg?width=900"}
+  ],
+  "photo_credit": "Initial demonstration photographs are from Wikimedia Commons and may be replaced by Pacific Civil Works job photos in Admin."
 }
