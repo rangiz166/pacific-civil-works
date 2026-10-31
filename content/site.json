@@ -1,0 +1,30 @@
+{
+  "business_name": "Pacific Civil Works",
+  "tagline": "Quality Work. Safe Practices. Strong Foundations.",
+  "hero_heading": "Earthworks & Machinery Hire",
+  "hero_text": "Providing reliable civil works and machinery hire across Waikato, Auckland, Tauranga and the wider North Island.",
+  "phone_display": "022 318 4466",
+  "phone_link": "+64223184466",
+  "email": "pacificautos8@gmail.com",
+  "director": "Narendra Prasad",
+  "service_area": "Waikato, Auckland, Tauranga and the wider North Island",
+  "services": [
+    {"name":"Earthworks","description":"Site cuts, house pads, section clearing and general excavation."},
+    {"name":"Drainage","description":"Stormwater, wastewater and drainage excavation solutions."},
+    {"name":"Retaining Walls","description":"Site preparation for timber, concrete and block retaining walls."},
+    {"name":"Roading","description":"Driveways, access roads and roading preparation."},
+    {"name":"Site Preparation","description":"Site clearing, levelling and preparation for all types of builds."}
+  ],
+  "machinery": [
+    {"name":"Hyundai 8 Tonne Digger","description":"Versatile excavator for earthworks, trenching and site preparation.","image":"assets/digger.svg"},
+    {"name":"2 to 4 Tonne Rollers","description":"Reliable compaction for driveways, roading and site preparation.","image":"assets/roller.svg"},
+    {"name":"Bobcat with Attachments","description":"Sweeper, 3-in-1 bucket and 24-inch miller head.","image":"assets/bobcat.svg"},
+    {"name":"8x4 & 6x4 Trucks","description":"Tipper trucks and transport support for civil and earthmoving work.","image":"assets/truck.svg"}
+  ],
+  "projects": [
+    {"title":"Earthworks","description":"Site preparation and excavation.","image":"assets/project-earthworks.svg"},
+    {"title":"Retaining","description":"Retaining wall preparation.","image":"assets/project-retaining.svg"},
+    {"title":"Roading","description":"Driveway and access road preparation.","image":"assets/project-road.svg"},
+    {"title":"Drainage","description":"Drainage and trenching work.","image":"assets/project-drainage.svg"}
+  ]
+}
