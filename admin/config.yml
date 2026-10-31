@@ -1,0 +1,49 @@
+backend:
+  name: github
+  repo: rangiz166/pacific-civil-works
+  branch: main
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "website"
+    label: "Website"
+    files:
+      - name: "main"
+        label: "Pacific Civil Works Website"
+        file: "content/site.json"
+        format: "json"
+        fields:
+          - {label: "Business Name", name: "business_name", widget: "string"}
+          - {label: "Slogan", name: "tagline", widget: "string"}
+          - {label: "Hero Heading", name: "hero_heading", widget: "string"}
+          - {label: "Hero Text", name: "hero_text", widget: "text"}
+          - {label: "Phone Display", name: "phone_display", widget: "string"}
+          - {label: "Phone Link", name: "phone_link", widget: "string"}
+          - {label: "Email", name: "email", widget: "string"}
+          - {label: "Director", name: "director", widget: "string"}
+          - {label: "Service Area Wording", name: "service_area", widget: "string"}
+          - label: "Services"
+            name: "services"
+            widget: "list"
+            summary: "{{fields.name}}"
+            fields:
+              - {label: "Service Name", name: "name", widget: "string"}
+              - {label: "Description", name: "description", widget: "text"}
+          - label: "Machinery"
+            name: "machinery"
+            widget: "list"
+            summary: "{{fields.name}}"
+            fields:
+              - {label: "Machine Name", name: "name", widget: "string"}
+              - {label: "Description", name: "description", widget: "text"}
+              - {label: "Photo", name: "image", widget: "image"}
+          - label: "Projects / Jobs"
+            name: "projects"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - {label: "Project / Job Title", name: "title", widget: "string"}
+              - {label: "Description", name: "description", widget: "text"}
+              - {label: "Photo", name: "image", widget: "image"}
