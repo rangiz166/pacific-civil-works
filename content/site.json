@@ -22,9 +22,9 @@
     {"name":"8x4 & 6x4 Trucks","description":"Tipper trucks and transport support for civil and earthmoving work.","image":"assets/truck.svg"}
   ],
   "projects": [
-    {"title":"Earthworks","description":"Site preparation and excavation.","image":"assets/project-earthworks.svg"},
-    {"title":"Retaining","description":"Retaining wall preparation.","image":"assets/project-retaining.svg"},
-    {"title":"Roading","description":"Driveway and access road preparation.","image":"assets/project-road.svg"},
-    {"title":"Drainage","description":"Drainage and trenching work.","image":"assets/project-drainage.svg"}
+    {"title":"Earthworks","description":"Site preparation and excavation.","image":"assets/digger.svg"},
+    {"title":"Retaining","description":"Retaining wall preparation.","image":"assets/truck.svg"},
+    {"title":"Roading","description":"Driveway and access road preparation.","image":"assets/roller.svg"},
+    {"title":"Drainage","description":"Drainage and trenching work.","image":"assets/bobcat.svg"}
   ]
 }
